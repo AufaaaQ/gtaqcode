@@ -1,0 +1,96 @@
+Fork GTAQCODE - 07/11/2026 01:05:16
+=== Found 5065 files ===
+
+=== PHASE 1: @gtaqcode/ -> @gtaqcode/ ===
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\[...404].css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\[...404].tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\auth\[...callback].ts
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\bench\[id].tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\black\subscribe\[plan].tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\data\[...path].ts
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\docs\[...path].ts
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\download\[channel]\[platform].ts
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\s\[id].ts
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\stats\[...path].ts
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\t\[...path].tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id].css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id].tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\index.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\model-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\model-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\new-user-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\new-user-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\provider-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\provider-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\billing-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\billing-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\black-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\black-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\black-waitlist-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\index.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\monthly-limit-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\monthly-limit-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\payment-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\payment-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\redeem-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\redeem-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\reload-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\billing\reload-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\go\index.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\go\lite-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\go\lite-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\keys\index.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\keys\key-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\keys\key-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\members\index.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\members\member-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\members\member-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\members\role-dropdown.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\members\role-dropdown.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\settings\index.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\settings\settings-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\settings\settings-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\usage\graph-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\usage\graph-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\usage\index.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\usage\usage-section.module.css
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\workspace\[id]\usage\usage-section.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\console\app\src\routes\zen\v1\models\[model].ts
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\enterprise\src\routes\[...404].tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\enterprise\src\routes\api\[...path].ts
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\enterprise\src\routes\share\[shareID].tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\stats\app\src\routes\compare\[firstFamily]\[secondFamily].tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\stats\app\src\routes\compare\[firstLab]\[firstModel]\[secondLab]\[secondModel].tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\stats\app\src\routes\[lab]\index.tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\stats\app\src\routes\[lab]\[model].tsx
+  SKIP: C:\Users\auftrrafi\Downloads\opencode-dev\opencode-dev\packages\web\src\pages\[...slug].md.ts
+  Phase 1: 0 files
+
+=== PHASE 2: OpenCode -> GTAQCODE ===
+  Phase 2: 0 files
+
+=== PHASE 3: .opencode/ -> .gtaqcode/ ===
+  Phase 3: 0 files
+
+=== PHASE 4: opencode-desktop -> gtaqcode-desktop ===
+  Phase 4: 0 files
+
+=== PHASE 5: opencode:// -> gtaqcode:// ===
+  Phase 5: 0 files
+
+=== PHASE 6: ai.opencode.desktop -> com.gtaqcode.desktop ===
+  Phase 6: 0 files
+
+=== PHASE 7: package.json name/bin ===
+  Phase 7: 0 files
+
+=== PHASE 8: Binary stubs ===
+
+=== PHASE 9: opencode-ai npm package ===
+  Phase 9: 0 files
+
+=== PHASE 10: Rename .opencode/ -> .gtaqcode/ ===
+  .opencode/ not found
+
+=== DONE 07/11/2026 01:06:00 ===
+Summary: Phase 1=0 Phase 2=0 Phase 3=0 Phase 4=0 Phase 5=0 Phase 6=0 Phase 7=0 Phase 9=0

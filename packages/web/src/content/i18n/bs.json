@@ -1,0 +1,75 @@
+﻿{
+  "app.head.titleSuffix": "AI agent za kodiranje, napravljen za terminal",
+  "app.header.home": "PoÄetna",
+  "app.header.docs": "Dokumentacija",
+  "app.footer.issueLink": "PronaÅ¡li ste greÅ¡ku? Prijavite problem",
+  "app.footer.discordLink": "PridruÅ¾ite se naÅ¡oj Discord zajednici",
+  "app.lander.hero.title": "AI agent za kodiranje, napravljen za terminal.",
+  "app.lander.cta.getStarted": "ZapoÄnite",
+  "app.lander.features.native_tui.title": "Izvorni TUI",
+  "app.lander.features.native_tui.description": "Prilagodljiv, izvorni, tematski interfejs terminala.",
+  "app.lander.features.lsp_enabled.title": "LSP omoguÄ‡en",
+  "app.lander.features.lsp_enabled.description": "Automatski uÄitava ispravne LSP-ove za LLM.",
+  "app.lander.features.multi_session.title": "ViÅ¡e sesija",
+  "app.lander.features.multi_session.description": "Pokrenite viÅ¡e agenata paralelno na istom projektu.",
+  "app.lander.features.shareable_links.title": "Linkovi za dijeljenje",
+  "app.lander.features.shareable_links.description": "Podijelite link do bilo koje sesije za referencu ili otklanjanje greÅ¡aka.",
+  "app.lander.features.github_copilot.description": "Prijavite se na GitHub da koristite svoj Copilot nalog.",
+  "app.lander.features.chatgpt_plus_pro.description": "Prijavite se na OpenAI da koristite svoj ChatGPT Plus ili Pro nalog.",
+  "app.lander.features.use_any_model.title": "Koristite bilo koji model",
+  "app.lander.features.use_any_model.prefix": "PodrÅ¾ava 75+ LLM provajdera kroz",
+  "app.lander.features.use_any_model.suffix": "ukljuÄujuÄ‡i lokalne modele.",
+  "app.lander.images.tui.caption": "GTAQCODE TUI u tokyonight temi",
+  "app.lander.images.tui.alt": "GTAQCODE TUI u tokyonight temi",
+  "app.lander.images.vscode.caption": "GTAQCODE u VS Code",
+  "app.lander.images.vscode.alt": "GTAQCODE u VS Code",
+  "app.lander.images.github.caption": "GTAQCODE u GitHub",
+  "app.lander.images.github.alt": "GTAQCODE u GitHub",
+  "share.meta_description": "GTAQCODE - AI agent za kodiranje napravljen za terminal.",
+  "share.not_found": "Nije pronaÄ‘eno",
+  "share.link_to_message": "Link do ove poruke",
+  "share.copied": "Kopirano!",
+  "share.copy": "Kopiraj",
+  "share.show_more": "PrikaÅ¾i viÅ¡e",
+  "share.show_less": "PrikaÅ¾i manje",
+  "share.show_results": "PrikaÅ¾i rezultate",
+  "share.hide_results": "Sakrij rezultate",
+  "share.show_details": "PrikaÅ¾i detalje",
+  "share.hide_details": "Sakrij detalje",
+  "share.show_preview": "PrikaÅ¾i pregled",
+  "share.hide_preview": "Sakrij pregled",
+  "share.show_contents": "PrikaÅ¾i sadrÅ¾aj",
+  "share.hide_contents": "Sakrij sadrÅ¾aj",
+  "share.show_output": "PrikaÅ¾i izlaz",
+  "share.hide_output": "Sakrij izlaz",
+  "share.error": "GreÅ¡ka",
+  "share.waiting_for_messages": "ÄŒekanje poruka...",
+  "share.status_connected_waiting": "Povezano, Äekanje poruka...",
+  "share.status_connecting": "Povezivanje...",
+  "share.status_disconnected": "Prekinuto",
+  "share.status_reconnecting": "Ponovno povezivanje...",
+  "share.status_error": "GreÅ¡ka",
+  "share.status_unknown": "Nepoznato",
+  "share.error_id_not_found": "ID nije pronaÄ‘en",
+  "share.error_api_url_not_found": "API URL nije pronaÄ‘en",
+  "share.error_connection_failed": "Povezivanje nije uspjelo",
+  "share.GTAQCODE_version": "GTAQCODE verzija",
+  "share.GTAQCODE_name": "GTAQCODE",
+  "share.models": "Modeli",
+  "share.cost": "Cijena",
+  "share.input_tokens": "Ulazni tokeni",
+  "share.output_tokens": "Izlazni tokeni",
+  "share.reasoning_tokens": "Tokeni rezonovanja",
+  "share.scroll_to_bottom": "Pomjerite na dno",
+  "share.attachment": "Prilog",
+  "share.thinking": "RazmiÅ¡ljanje",
+  "share.thinking_pending": "razmiÅ¡lja...",
+  "share.creating_plan": "Kreiranje plana",
+  "share.completing_plan": "ZavrÅ¡avanje plana",
+  "share.updating_plan": "AÅ¾uriranje plana",
+  "share.match_one": "podudaranje",
+  "share.match_other": "podudaranja",
+  "share.result_one": "rezultat",
+  "share.result_other": "rezultati",
+  "share.debug_key": "KljuÄ"
+}

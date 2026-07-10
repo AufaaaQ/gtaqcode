@@ -1,0 +1,10 @@
+﻿[Desktop Entry]
+Name=GTAQCODE
+Exec=/opt/GTAQCODE/ai.GTAQCODE.desktop %U
+Terminal=false
+Type=Application
+Icon=ai.GTAQCODE.desktop
+StartupWMClass=ai.GTAQCODE.desktop
+NoDisplay=true
+Comment=Open source AI coding agent
+Categories=Development;

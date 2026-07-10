@@ -1,0 +1,33 @@
+﻿{
+  "$schema": "https://v2-8-13.turborepo.dev/schema.json",
+  "globalEnv": ["CI", "GTAQCODE_DISABLE_SHARE"],
+  "globalPassThroughEnv": ["CI", "GTAQCODE_DISABLE_SHARE"],
+  "tasks": {
+    "typecheck": {},
+    "build": {
+      "dependsOn": [],
+      "outputs": ["dist/**"]
+    },
+    "GTAQCODE#test": {
+      "dependsOn": ["^build"],
+      "outputs": [],
+      "passThroughEnv": ["*"]
+    },
+    "@gtaqcode/core#test": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "@gtaqcode/app#test": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "@gtaqcode/ui#test": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "@gtaqcode/session-ui#test": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    }
+  }
+}

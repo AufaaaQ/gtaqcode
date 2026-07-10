@@ -1,0 +1,9 @@
+﻿User-agent: *
+Allow: /
+
+# Disallow shared content pages
+Disallow: /s/
+Disallow: /share/
+
+Sitemap: https://GTAQCODE.ai/sitemap.xml
+Sitemap: https://GTAQCODE.ai/data/sitemap.xml
