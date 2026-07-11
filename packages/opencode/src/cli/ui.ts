@@ -3,12 +3,12 @@ import { Schema } from "effect"
 import { logo as glyphs } from "./logo"
 
 const wordmark = [
-  `  ________   ___   ___   ___   ___   ___   _____  `,
-  ` /  _____/ /  _/ /  _/ /  _/ /  _/ /  _/ /  _  \\ `,
-  `/   \\___  |  |   |  |   |  |   |  |   |  |  | |_| |`,
-  `\\    \\  \\ |  |   |  |   |  |   |  |   |  |  \\____  |`,
-  ` \\___  /  |  |   |  |   |  |   |  |   |  |   __ _| |`,
-  `     \\/  /___/  /___/  /___/  /___/  /___/  |_____/ `,
+  `   _____ _____  _    _  _____   _____   ____   _   _  _____  `,
+  `  / ____|_   _|| |  | |/ ____| / ____| / __ \\ | \\ | |/ ____| `,
+  ` | |  __  | |  | |  | | |     | |     | |  | ||  \\| | |      `,
+  ` | | |_ | | |  | |  | | |     | |     | |  | || . \\ | |      `,
+  ` | |__| |_| |_ | |__| | |____ | |____ | |__| || |\\  | |____  `,
+  `  \\_____|_____| \\____/ \\_____| \\_____| \\____/ |_| \\_|\\_____| `,
 ]
 
 export class CancelledError extends Schema.TaggedErrorClass<CancelledError>()("UICancelledError", {}) {}
@@ -79,11 +79,11 @@ export function logo(pad?: string) {
         continue
       }
       if (char === "^") {
-        parts.push(fg, bg, "▀", reset)
+        parts.push(fg, bg, "#", reset)
         continue
       }
       if (char === "~") {
-        parts.push(shadow, "▀", reset)
+        parts.push(shadow, "#", reset)
         continue
       }
       if (char === " ") {

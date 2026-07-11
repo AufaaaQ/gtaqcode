@@ -54,12 +54,12 @@ function cells(line: string): Cell[] {
     }
 
     if (char === "^") {
-      list.push({ char: "â–€", mark: "mix" })
+      list.push({ char: "#", mark: "mix" })
       continue
     }
 
     if (char === "~") {
-      list.push({ char: "â–€", mark: "top" })
+      list.push({ char: "#", mark: "top" })
       continue
     }
 
