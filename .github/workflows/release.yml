@@ -36,10 +36,10 @@ jobs:
 
       - name: Build and upload
         env:
-          GTAQCODE_VERSION: ${{ inputs.version }}
-          GTAQCODE_RELEASE: "true"
+          OPENCODE_VERSION: ${{ inputs.version }}
+          OPENCODE_RELEASE: "true"
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
         run: |
           cd packages/opencode
-          bun run script/build.ts --single
+          bun run script/build.ts --single --skip-embed-web-ui
