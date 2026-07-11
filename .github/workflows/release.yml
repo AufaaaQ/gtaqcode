@@ -25,23 +25,19 @@ jobs:
 
       - run: bun install
 
-      - name: Create release
-        run: |
-          gh release delete v${{ inputs.version }} --yes 2>/dev/null || true
-          git tag -d v${{ inputs.version }} 2>/dev/null || true
-          gh release create v${{ inputs.version }} \
-            --title "v${{ inputs.version }}" \
-            --target ${{ github.sha }} \
-            --notes "Release v${{ inputs.version }}"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build and upload
+      - name: Build binary
         env:
           OPENCODE_VERSION: ${{ inputs.version }}
-          OPENCODE_RELEASE: "true"
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
         run: |
           cd packages/opencode
           bun run script/build.ts --single --skip-embed-web-ui
+
+      - name: Package and upload
+        run: |
+          cd packages/opencode
+          ARCHIVE="gtaqcode-linux-x64.tar.gz"
+          tar -czf "$ARCHIVE" -C dist/gtaqcode-linux-x64/bin .
+          gh release upload v${{ inputs.version }} "$ARCHIVE" --clobber
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
