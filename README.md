@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://GTAQCODE.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
   <a href="https://www.npmjs.com/package/GTAQCODE-ai"><img alt="npm" src="https://img.shields.io/npm/v/GTAQCODE-ai?style=flat-square" /></a>
-  <a href="https://github.com/anomalyco/GTAQCODE/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/anomalyco/GTAQCODE/publish.yml?style=flat-square&branch=dev" /></a>
+  <a href="https://github.com/AufaaaQ/gtaqcode/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/AufaaaQ/gtaqcode/publish.yml?style=flat-square&branch=main" /></a>
 </p>
 
 <p align="center">
@@ -53,12 +53,12 @@ curl -fsSL https://GTAQCODE.ai/install | bash
 npm i -g GTAQCODE-ai@latest        # or bun/pnpm/yarn
 scoop install GTAQCODE             # Windows
 choco install GTAQCODE             # Windows
-brew install anomalyco/tap/GTAQCODE # macOS and Linux (recommended, always up to date)
+# brew install anomalyco/tap/GTAQCODE # macOS and Linux (recommended, always up to date)
 brew install GTAQCODE              # macOS and Linux (official brew formula, updated less)
 sudo pacman -S GTAQCODE            # Arch Linux (Stable)
 paru -S GTAQCODE-bin               # Arch Linux (Latest from AUR)
 mise use -g GTAQCODE               # Any OS
-nix run nixpkgs#GTAQCODE           # or github:anomalyco/GTAQCODE for latest dev branch
+nix run nixpkgs#GTAQCODE           # or github:AufaaaQ/gtaqcode for latest dev branch
 ```
 
 > [!TIP]
@@ -66,7 +66,7 @@ nix run nixpkgs#GTAQCODE           # or github:anomalyco/GTAQCODE for latest dev
 
 ### Desktop App (BETA)
 
-GTAQCODE is also available as a desktop application. Download directly from the [releases page](https://github.com/anomalyco/GTAQCODE/releases) or [GTAQCODE.ai/download](https://GTAQCODE.ai/download).
+GTAQCODE is also available as a desktop application. Download directly from the [releases page](https://github.com/AufaaaQ/gtaqcode/releases) or [GTAQCODE.ai/download](https://GTAQCODE.ai/download).
 
 | Platform              | Download                           |
 | --------------------- | ---------------------------------- |
