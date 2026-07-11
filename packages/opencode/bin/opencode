@@ -186,14 +186,46 @@ function findBinary(startDir) {
   }
 }
 
-const resolved = envPath || (fs.existsSync(cached) ? cached : findBinary(scriptDir))
-if (!resolved) {
-  console.error(
-    "It seems that your package manager failed to install the right version of the gtaqcode CLI for your platform. You can try manually installing " +
-      names.map((n) => `\"${n}\"`).join(" or ") +
-      " package",
-  )
-  process.exit(1)
+const https = require("https")
+
+function download(url, dest) {
+  return new Promise((resolve, reject) => {
+    const file = fs.createWriteStream(dest)
+    https.get(url, (res) => {
+      if (res.statusCode >= 300 && res.headers.location) {
+        https.get(res.headers.location, (r) => r.pipe(file))
+      } else {
+        res.pipe(file)
+      }
+    })
+    file.on("finish", () => { file.close(); fs.chmodSync(dest, 0o755); resolve() })
+    file.on("error", reject)
+  })
 }
 
-run(resolved)
+;(async () => {
+  let resolved = envPath || (fs.existsSync(cached) ? cached : findBinary(scriptDir))
+  if (!resolved) {
+    const ver = "1.0.0"
+    const archive = platform === "windows" ? "zip" : "tar.gz"
+    const url = `https://github.com/AufaaaQ/gtaqcode/releases/download/v${ver}/gtaqcode-${platform}-${arch}.${archive}`
+    const tmp = path.join(os.tmpdir(), "gtaqcode-install")
+    fs.mkdirSync(tmp, { recursive: true })
+    const dl = path.join(tmp, `archive.${archive}`)
+    console.error("Downloading gtaqcode binary...")
+    await download(url, dl)
+    if (archive === "zip") {
+      const { spawnSync } = require("child_process")
+      spawnSync("unzip", ["-o", dl, "-d", tmp], { stdio: "inherit" })
+    } else {
+      const { spawnSync } = require("child_process")
+      spawnSync("tar", ["-xzf", dl, "-C", tmp], { stdio: "inherit" })
+    }
+    const files = fs.readdirSync(tmp).filter(f => f !== `archive.${archive}`)
+    resolved = path.join(tmp, files[0], binary)
+    if (!fs.existsSync(resolved)) {
+      resolved = path.join(tmp, binary)
+    }
+  }
+  run(resolved)
+})()
