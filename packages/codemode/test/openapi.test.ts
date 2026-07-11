@@ -15,7 +15,7 @@ type Recorded = {
 }
 
 const GTAQCODESpec = async (): Promise<Document> => {
-  return Bun.file(new URL("./fixtures/GTAQCODE-v2-openapi.json", import.meta.url)).json() as Promise<Document>
+  return Bun.file(new URL("./fixtures/opencode-v2-openapi.json", import.meta.url)).json() as Promise<Document>
 }
 
 const happyPathSpec = async (): Promise<Document> => {

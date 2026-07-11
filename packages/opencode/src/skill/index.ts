@@ -32,7 +32,7 @@ const SKILL_PATTERN = "**/SKILL.md"
 const CUSTOMIZE_GTAQCODE_SKILL_NAME = "customize-GTAQCODE"
 const CUSTOMIZE_GTAQCODE_SKILL_DESCRIPTION =
   "Use ONLY when the user is editing or creating GTAQCODE's own configuration: GTAQCODE.json, GTAQCODE.jsonc, files under .GTAQCODE/, or files under ~/.config/GTAQCODE/. Also use when creating or fixing GTAQCODE agents, subagents, skills, plugins, MCP servers, or permission rules. Do not use for the user's own application code, or for any project that is not configuring GTAQCODE itself."
-const CUSTOMIZE_GTAQCODE_SKILL_BODY = SkillPlugin.CustomizeGTAQCODEContent
+const CUSTOMIZE_GTAQCODE_SKILL_BODY = SkillPlugin.CustomizeOpenCodeContent
 
 export const Info = Schema.Struct({
   name: Schema.String,

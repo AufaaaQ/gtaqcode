@@ -3,7 +3,7 @@ import { defineConfig } from "electron-vite"
 import appPlugin from "@gtaqcode/app/vite"
 import * as fs from "node:fs/promises"
 
-const GTAQCODE_SERVER_DIST = "../GTAQCODE/dist/node"
+const GTAQCODE_SERVER_DIST = "../opencode/dist/node"
 
 const channel = (() => {
   const raw = process.env.OPENCODE_CHANNEL

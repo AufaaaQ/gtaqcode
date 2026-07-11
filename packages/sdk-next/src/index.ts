@@ -1,4 +1,4 @@
-﻿export * as GTAQCODE from "./GTAQCODE"
+﻿export * as GTAQCODE from "./opencode"
 export * as Tool from "./tool"
 
 export { ClientError } from "@gtaqcode/client/effect"

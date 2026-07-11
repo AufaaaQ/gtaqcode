@@ -9,7 +9,7 @@ import path from "path"
 
 import { createClient } from "@hey-api/openapi-ts"
 
-const GTAQCODE = path.resolve(dir, "../../GTAQCODE")
+const GTAQCODE = path.resolve(dir, "../../opencode")
 
 await $`bun dev generate > ${dir}/openapi.json`.cwd(GTAQCODE)
 

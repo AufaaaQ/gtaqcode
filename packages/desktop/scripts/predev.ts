@@ -2,4 +2,4 @@
 
 await $`bun ./scripts/copy-icons.ts ${process.env.OPENCODE_CHANNEL ?? "dev"}`
 
-await $`cd ../GTAQCODE && bun script/build-node.ts`
+await $`cd ../opencode && bun script/build-node.ts`
