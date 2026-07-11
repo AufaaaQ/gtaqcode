@@ -64,5 +64,5 @@ jobs:
           cd packages/opencode
           bun run script/build.ts --single --skip-embed-web-ui
           $ARCHIVE="gtaqcode-windows-x64.zip"
-          Compress-Archive -Path "dist/gtaqcode-windows-x64/bin/*" -DestinationPath "$ARCHIVE"
+           7z a "$ARCHIVE" ./dist/gtaqcode-windows-x64/bin/*
           gh release upload v${{ inputs.version }} "$ARCHIVE" --clobber
