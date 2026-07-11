@@ -1,0 +1,13 @@
+{
+  "name": "gtaqcode",
+  "version": "1.0.1",
+  "description": "GTAQCODE - AI-powered development tool",
+  "bin": {
+    "gtaqcode": "./bin/gtaqcode.js"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AufaaaQ/gtaqcode.git"
+  }
+}
