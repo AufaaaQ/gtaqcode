@@ -114,7 +114,7 @@ for (const item of targets) {
         name: `@gtaqcode/${name}`,
         version: Script.version,
         license: "MIT",
-        repository: { type: "git", url: "git+https://github.com/anomalyco/GTAQCODE.git" },
+        repository: { type: "git", url: "git+https://github.com/AufaaaQ/gtaqcode.git" },
         os: [item.os],
         cpu: [item.arch],
       },
