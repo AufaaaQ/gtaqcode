@@ -27,6 +27,8 @@ jobs:
 
       - name: Create release
         run: |
+          gh release delete v${{ inputs.version }} --yes 2>/dev/null || true
+          git tag -d v${{ inputs.version }} 2>/dev/null || true
           gh release create v${{ inputs.version }} \
             --title "v${{ inputs.version }}" \
             --target ${{ github.sha }} \
