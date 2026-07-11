@@ -93,7 +93,7 @@ const [store, setStore] = createStore<State>({
   themes: allThemes(),
   mode: "dark",
   lock: undefined,
-  active: "GTAQCODE",
+  active: "opencode",
   ready: false,
 })
 
@@ -118,8 +118,8 @@ export const { use: useTheme, provider: ThemeProvider } = createSimpleContext({
         if (!lock && pick(kv.get("theme_mode")) !== undefined) kv.set("theme_mode", undefined)
         draft.mode = mode
         draft.lock = lock
-        const active = config.theme ?? kv.get("theme", "GTAQCODE")
-        draft.active = typeof active === "string" ? active : "GTAQCODE"
+        const active = config.theme ?? kv.get("theme", "opencode")
+        draft.active = typeof active === "string" ? active : "opencode"
         draft.ready = false
       }),
     )
@@ -140,7 +140,7 @@ export const { use: useTheme, provider: ThemeProvider } = createSimpleContext({
             }, {}),
           )
         })
-        .catch(() => setStore("active", "GTAQCODE"))
+        .catch(() => setStore("active", "opencode"))
     }
 
     onMount(() => {
@@ -159,7 +159,7 @@ export const { use: useTheme, provider: ThemeProvider } = createSimpleContext({
           if (!colors.palette[0]) {
             if (hasResolvedSystemTheme) return
             setSystemTheme(undefined)
-            if (store.active === "system") setStore("active", "GTAQCODE")
+            if (store.active === "system") setStore("active", "opencode")
             return
           }
           const next = store.lock ?? terminalMode(colors) ?? mode
@@ -174,7 +174,7 @@ export const { use: useTheme, provider: ThemeProvider } = createSimpleContext({
         .catch(() => {
           if (hasResolvedSystemTheme) return
           setSystemTheme(undefined)
-          if (store.active === "system") setStore("active", "GTAQCODE")
+          if (store.active === "system") setStore("active", "opencode")
         })
     }
 
@@ -263,7 +263,9 @@ export const { use: useTheme, provider: ThemeProvider } = createSimpleContext({
         if (theme) return resolveTheme(theme, store.mode)
       }
 
-      return resolveTheme(store.themes.GTAQCODE, store.mode)
+      const fallback = store.themes.opencode
+      if (!fallback) throw new Error("Default theme not found")
+      return resolveTheme(fallback, store.mode)
     })
 
     createEffect(() => renderer.setBackgroundColor(values().background))
@@ -272,10 +274,11 @@ export const { use: useTheme, provider: ThemeProvider } = createSimpleContext({
     const subtleSyntax = createSyntaxStyleMemo(() => generateSubtleSyntax(values()))
 
     return {
-      theme: new Proxy(values(), {
-        get(_target, prop) {
-          // @ts-expect-error Properties are forwarded to the current reactive value.
-          return values()[prop]
+      theme: new Proxy({} as TuiThemeCurrent, {
+        get(_, prop) {
+          const v = values()
+          if (!v) return Reflect.get(store.themes.opencode ?? {}, prop)
+          return Reflect.get(v, prop)
         },
       }),
       get selected() {
